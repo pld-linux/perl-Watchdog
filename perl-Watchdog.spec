@@ -3,7 +3,7 @@
 %bcond_without	tests	# do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	Watchdog
+%define		pdir	Watchdog
 Summary:	Watchdog - set of watchdog modules
 Summary(pl):	Watchdog - zbiór modu³ów do monitoringu
 Name:		perl-Watchdog
