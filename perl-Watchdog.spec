@@ -5,6 +5,7 @@
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	Watchdog
 Summary:	Watchdog - set of watchdog modules
+Summary(pl):	Watchdog - zbiór modu³ów do monitoringu.
 Name:		perl-Watchdog
 Version:	0.10
 Release:	1
@@ -15,14 +16,19 @@ Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{version}.tar.gz
 # Source0-md5:	63e684be05307a8cd148d9020d62b99c
 BuildRequires:	perl-devel >= 5.6
 BuildRequires:	rpm-perlprov >= 4.1-13
-BuildRequires:	perl(Alias)
-BuildRequires:	perl(Proc::ProcessTable)
+BuildRequires:	perl-Alias
+BuildRequires:	perl-Proc-ProcessTable
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
+BuildArch:	noarch
 
 %description
 Watchdog::Process, Watchdog::HTTP and Watchdog::Mysql are classes for
 monitoring whether a process, http server or mysql server respectively
 is functioning.
+
+%description -l pl
+Watchdog::Process, Watchdog::HTTP and Watchdog::Mysql sa modu³ami s³u¿acymi
+do monitorowania pracy procesów, serwera www lub mysql.
 
 %prep
 %setup -q -n %{pdir}-%{version}
