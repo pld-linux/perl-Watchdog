@@ -1,6 +1,6 @@
 #
 # Conditional build:
-%bcond_without	tests	# do perform "make test"
+%bcond_without	tests	# do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	Watchdog
@@ -10,7 +10,7 @@ Name:		perl-Watchdog
 Version:	0.10
 Release:	2
 # same as perl
-License:	GPL or Artistic
+License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{version}.tar.gz
 # Source0-md5:	63e684be05307a8cd148d9020d62b99c
@@ -36,7 +36,6 @@ s³u¿±cymi do monitorowania pracy procesów, serwera WWW lub MySQL.
 %build
 %{__perl} Makefile.PL \
 	INSTALLDIRS=vendor
-
 %{__make}
 
 %{?with_tests:%{__make} test}
