@@ -8,7 +8,7 @@ Summary:	Watchdog - set of watchdog modules
 Summary(pl):	Watchdog - zbiór modu³ów do monitoringu
 Name:		perl-Watchdog
 Version:	0.10
-Release:	1
+Release:	2
 # same as perl
 License:	GPL or Artistic
 Group:		Development/Languages/Perl
