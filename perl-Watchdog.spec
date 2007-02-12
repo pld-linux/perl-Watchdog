@@ -5,7 +5,7 @@
 %include	/usr/lib/rpm/macros.perl
 %define		pdir	Watchdog
 Summary:	Watchdog - set of watchdog modules
-Summary(pl):	Watchdog - zbiÛr modu≥Ûw do monitoringu
+Summary(pl.UTF-8):   Watchdog - zbi√≥r modu≈Ç√≥w do monitoringu
 Name:		perl-Watchdog
 Version:	0.10
 Release:	3
@@ -26,9 +26,9 @@ Watchdog::Process, Watchdog::HTTP and Watchdog::Mysql are classes for
 monitoring whether a process, HTTP server or MySQL server respectively
 is functioning.
 
-%description -l pl
-Watchdog::Process, Watchdog::HTTP i Watchdog::Mysql s± modu≥ami
-s≥uø±cymi do monitorowania pracy procesÛw, serwera WWW lub MySQL.
+%description -l pl.UTF-8
+Watchdog::Process, Watchdog::HTTP i Watchdog::Mysql sƒÖ modu≈Çami
+s≈Çu≈ºƒÖcymi do monitorowania pracy proces√≥w, serwera WWW lub MySQL.
 
 %prep
 %setup -q -n %{pdir}-%{version}
