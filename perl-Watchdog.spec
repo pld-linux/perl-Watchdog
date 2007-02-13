@@ -5,7 +5,7 @@
 %include	/usr/lib/rpm/macros.perl
 %define		pdir	Watchdog
 Summary:	Watchdog - set of watchdog modules
-Summary(pl.UTF-8):   Watchdog - zbiór modułów do monitoringu
+Summary(pl.UTF-8):	Watchdog - zbiór modułów do monitoringu
 Name:		perl-Watchdog
 Version:	0.10
 Release:	3
