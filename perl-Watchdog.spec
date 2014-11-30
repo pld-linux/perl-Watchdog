@@ -1,9 +1,9 @@
 #
 # Conditional build:
 %bcond_without	tests	# do not perform "make test"
-#
-%include	/usr/lib/rpm/macros.perl
+
 %define		pdir	Watchdog
+%include	/usr/lib/rpm/macros.perl
 Summary:	Watchdog - set of watchdog modules
 Summary(pl.UTF-8):	Watchdog - zbiór modułów do monitoringu
 Name:		perl-Watchdog
@@ -14,6 +14,7 @@ License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{version}.tar.gz
 # Source0-md5:	63e684be05307a8cd148d9020d62b99c
+URL:		http://search.cpan.org/dist/Watchdog/
 BuildRequires:	perl-Alias
 BuildRequires:	perl-Proc-ProcessTable
 BuildRequires:	perl-devel >= 1:5.8.0
